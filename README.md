@@ -4,7 +4,7 @@
 <div align="center">
 
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/FFmpeg_Logo_new.svg/1920px-FFmpeg_Logo_new.svg.png" style="width:200px;"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/FFmpeg_Logo_new.svg/1920px-FFmpeg_Logo_new.svg.png" style="width:400px;"/>
 
 <h3 align="center">FFMPEG Util scripts and Templates</h3>
 
