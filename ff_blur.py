@@ -3,6 +3,7 @@
 # │                        Change the video Aspect Ratio                         │
 # │                                                                              │
 # ╰──────────────────────────────────────────────────────────────────────────────╯
+import os
 import sys
 import argparse
 import subprocess
@@ -18,6 +19,7 @@ def get_params():
     parser.add_argument('-C', '--config',    type=str,          default="",             help='Supply a config.json file with settings instead of command-line. Requires JQ installed.')
     parser.add_argument('-l', '--loglevel', type=str,          default="error",        help='The FFMPEG loglevel to use. Default is "error" only.', \
                                                                                             choices=["quiet", "panic", "fatal", "error", "warning", "info", "verbose", "debug", "trace"])
+    parser.add_argument('-ud', '--use_docker', action='store_true', help='Use FFMPEG from docker container')
     args = parser.parse_args()
     return args
 
@@ -25,7 +27,14 @@ def get_params():
 
 def launch_command(args):
     print("ff_blur.py - Changing the blurriness of the video.")
-    command = ["ffmpeg", "-v", args.loglevel, "-i", args.input, "-vf", "gblur=sigma={}:steps={}".format(args.strength, args.steps), "-c:a", "copy", args.output]
+
+    if args.use_docker:
+        # https://docs.docker.com/engine/install/linux-postinstall/
+        # https://hub.docker.com/r/jrottenberg/ffmpeg/
+        command = ["docker", "run", "-it", "-v", os.getcwd()+":"+os.getcwd(), '-w', os.getcwd(), "jrottenberg/ffmpeg"]
+    else:
+        command = ["ffmpeg"]
+    command += ["-v", args.loglevel, "-i", args.input, "-vf", "gblur=sigma={}:steps={}".format(args.strength, args.steps), "-c:a", "copy", args.output]
     print(command)
 
     result = subprocess.run(command)

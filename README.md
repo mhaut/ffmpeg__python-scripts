@@ -4,7 +4,7 @@
 <div align="center">
 
 
-<img src="https://svg-rewriter.sachinraja.workers.dev/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2F%40mdi%2Fsvg%406.7.96%2Fsvg%2Fvideo-box.svg&fill=%234cae4c&width=200px&height=200px" style="width:200px;"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/FFmpeg_Logo_new.svg/1920px-FFmpeg_Logo_new.svg.png" style="width:200px;"/>
 
 <h3 align="center">FFMPEG Util scripts and Templates</h3>
 
