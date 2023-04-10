@@ -51,6 +51,10 @@ Current list of scripts and their purposes.
 | -------------------- | ---------------------------------------------------------------- |
 | `ff_append.py`        | This will concatenate two videos together and re-encode them     |
 | `ff_aspect_ratio.py`  | Changes the container metadata's Display Aspect Ratio (DAR)      |
+| `ff_blur.sh`          | Simple blur function using an unsharp mask                       |
+| `ff_colour.sh`        | Change brightness, contrast, gamma, saturation of video          |
+| `ff_concat.sh`        | Concatenate multiple videos together                             |
+| `ff_convert.sh`       | Convert an apple quicktime MOV to MP4 file                       |
 | -------------------- | ---------------------------------------------------------------- |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
