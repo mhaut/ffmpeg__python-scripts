@@ -54,7 +54,12 @@ Current list of scripts and their purposes.
 | `ff_blur.sh`          | Simple blur function using an unsharp mask                       |
 | `ff_colour.sh`        | Change brightness, contrast, gamma, saturation of video          |
 | `ff_concat.sh`        | Concatenate multiple videos together                             |
-| `ff_convert.sh`       | Convert an apple quicktime MOV to MP4 file                       |
+| `ff_convert.sh`       | Convert an apple quicktime MOV to MP4 file                        |
+| `ff_crop.sh`          | Crop video to specific size                                       |
+| `ff_cut.sh`           | Cut video from start time to end time.                           |
+| `ff_download.sh`      | Use CURL to download multiple files. Useful for scriptflow.        |
+| `ff_flip.sh`           | Horizontally and/or vertically flip the video                     |
+| `ff_fps.sh`           | Alter the FPS with changing length of video                      |
 | -------------------- | ---------------------------------------------------------------- |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
