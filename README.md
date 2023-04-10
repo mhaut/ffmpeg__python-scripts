@@ -32,7 +32,7 @@ These are the steps to get up and running with this theme.
 
 1. Clone the repo
     ```sh
-    git clone https://github.com/mhaut/python__bash-scripts
+    git clone https://github.com/mhaut/ffmpeg__python-scripts
     ```
 2. Either update your $PATH to include this folder or create a link in `/usr/local/bin` to each script.
     ```sh
@@ -67,6 +67,7 @@ Current list of scripts and their purposes.
 
 ##  4. Reference Repository
 Repository based on: [https://github.com/IORoot/ffmpeg__bash-scripts](https://github.com/IORoot/ffmpeg__bash-scripts)
+
 Author Link: [https://github.com/IORoot](https://github.com/IORoot)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
