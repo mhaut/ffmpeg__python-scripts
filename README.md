@@ -60,6 +60,11 @@ Current list of scripts and their purposes.
 | `ff_download.sh`      | Use CURL to download multiple files. Useful for scriptflow.        |
 | `ff_flip.sh`           | Horizontally and/or vertically flip the video                     |
 | `ff_fps.sh`           | Alter the FPS with changing length of video                      |
+| `ff_grouptime.sh`    | Proportionally trims and concats videos to target video duration |
+| `ff_image.sh`        | Make a video from a looped image                                 |
+| `ff_lut.sh`          | Apply a 3DL/Cube LUT file to a video                             |
+| `ff_middle.sh`       | Remove equal number of seconds from start and end of video       |
+| `ff_overlay.sh`      | Overlay an image or video on top of another video                |
 | -------------------- | ---------------------------------------------------------------- |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
